@@ -1,2 +1,4 @@
+.DS_Store
 backend/notes.md
 backend/node_modules
+backend/uploads
