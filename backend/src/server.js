@@ -13,7 +13,7 @@ const app = express();
  *  you can find one for you on atlas
  */
 mongoose.connect(
-    "mongodb+srv://omnistack:fKPYiYFoT3zlFjIF@omnistack-gustavoper-g0vnh.mongodb.net/semana09?retryWrites=true&w=majority",
+    "",
     {
         useNewUrlParser: true, 
         useUnifiedTopology: true
