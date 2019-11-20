@@ -2,6 +2,8 @@
  * Server.js - 
  */
 
+require('dotenv/config');
+
 const express = require('express');
 const mongoose = require("mongoose");
 const routes = require("./routes");
@@ -13,7 +15,7 @@ const app = express();
  *  you can find one for you on atlas
  */
 mongoose.connect(
-    "",
+    process.env.DB_CONNSTRING,
     {
         useNewUrlParser: true, 
         useUnifiedTopology: true
