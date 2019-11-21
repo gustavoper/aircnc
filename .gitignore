@@ -2,3 +2,5 @@
 backend/notes.md
 backend/node_modules
 backend/uploads
+backend/.env
+backend/yarn.lock
