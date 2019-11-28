@@ -7,7 +7,7 @@ require('dotenv/config');
 const express = require('express');
 const mongoose = require("mongoose");
 const routes = require("./routes");
-
+const cors = require('cors');
 const app = express();
 
 /**
@@ -27,6 +27,8 @@ mongoose.connect(
 //req.params = route params (edit, delete)
 
 //set this one to enable JSONing stuff. XML is for dinossaurs and we are asteroids
+
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 //hey, listen
